@@ -1,0 +1,174 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+* {
+    outline: 1px solid red !important;
+}
+
+@font-face {
+    font-family: "BootsAndSpurs";
+    src: url('../fonts/BootsAndSpurs.ttf') format(truetype);
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, .logo {
+    font-family: 'BootsAndSpurs', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+.product-list h2 {
+    font-size: 3rem;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header */
+
+#header_img {
+    min-height: 76rem;
+    background-image: url("../images/home-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
+    position: relative;
+}
+
+/* Images */
+
+.rounded_edges {
+    border-radius: 11rem;
+}
+
+.circle_picture {
+    border-radius: 50%;
+}
+
+.width_100 {
+    width: 100%;
+}
+
+/* Nav */
+
+nav, footer {
+    background-color: #202020;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.25rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.active {
+   color: #fff;
+   text-decoration: underline;
+}
+
+/* form */
+input, select, textarea {
+    display: block;
+    border: 1px solid #c4c4c4;
+    border-radius: 0.5rem;
+}
+
+/* sections */
+
+footer {
+    color: #fff;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#section_reviews {
+    background-color: #E8E8E8;
+}
+
+.product-block {
+    background-color: #FBFBFB;
+}
+
+/* Layout */
+
+.welcome_content {
+    position: absolute;
+    top: 17rem;
+    left: 17rem;
+    text-align: center;
+}
+
+.center_button {
+    margin: 0px auto;
+}
+
+.clear {
+    clear: left;
+}
+
+/* buttons */
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 38px;
+    color: #fff;
+    background-color: #BB0000;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.6rem;
+}
+
+.cta-sale {
+    background-color: #127300;
+}
+
+.header_button {
+    width: 462px;
+    height: 80px;
+    font-size: 2.5rem;
+}
+
+.contact_button {
+    width: 365px;
+    height: 63px;
+    font-size: 2.5rem;
+}
