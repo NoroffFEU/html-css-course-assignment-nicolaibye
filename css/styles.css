@@ -16,7 +16,6 @@
 }
 
 body {
-    box-sizing: border-box;
     margin: 0;
     font-size: 1.6rem;
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -35,7 +34,7 @@ h2 {
 }
 
 .logo {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .product-list h2 {
@@ -55,39 +54,29 @@ h2 {
     position: relative;
 }
 
-/* Images */
-
-.rounded_edges {
-    border-radius: 11rem;
-}
-
-.circle_picture {
-    border-radius: 50%;
-}
-
-.width_100 {
-    width: 100%;
-}
-
 /* Nav */
 
-nav, footer {
+header, footer {
     background-color: #202020;
 }
 
+header {
+    display: flex;
+}
+
 nav {
+    margin: 0px 0px 0px 25px;
     display: flex;
     align-items: center;
-    position: sticky;
-    top: 0px;
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
+    padding: 0px;
+    margin-left: 25px;
 }
 
 nav a {
-    display: inline-block;
     color: #fff;
     text-decoration: none;
     padding: 1.25rem;
@@ -125,6 +114,16 @@ footer {
     background-color: #FBFBFB;
 }
 
+.selling_points {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.selling_points > * {
+    flex: 1;
+}
+
 /* Layout */
 
 .welcome_content {
@@ -138,8 +137,14 @@ footer {
     margin: 0px auto;
 }
 
-.clear {
-    clear: left;
+/* Images */
+
+.selling_points_images {
+    border-radius: 11rem;
+}
+
+.circle_picture {
+    border-radius: 50%;
 }
 
 /* buttons */
